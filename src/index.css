@@ -1,0 +1,116 @@
+/* Apply box-sizing to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Styles for the body */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styles for input and textarea */
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+
+/* Styles for the notes list */
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0;
+}
+
+/* Styles for the app header title */
+.app-header__title {
+  margin: 10px 20px 0px;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles for the app header controls */
+.app-header__controls {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 10px;
+}
+
+/* Styles for search and add new */
+.search,
+.add-new {
+  font-size: 14px;
+  padding: 5px;
+  margin: 8px;
+}
+
+/* Styles for the search input */
+.search {
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+/* Styles for the add new button */
+.add-new {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: bolder;
+  background-color: #eee;
+  outline: none;
+}
+
+/* Styles for a note */
+.note {
+  font-family: "Permanent Marker", cursive;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: lightyellow;
+  border: 1px solid grey;
+  box-shadow: 2px 2px 3px lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Styles for note title and description */
+.note__title,
+.note__description {
+  font-family: "Permanent Marker", cursive;
+  width: 100%;
+  padding: 8px 14px;
+  background: transparent;
+}
+
+/* Styles for note title */
+.note__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Styles for note description */
+.note__description {
+  flex-grow: 1;
+  font-size: 14px;
+}
+
+/* Styles for note delete icon */
+.note__delete {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  color: lightgrey;
+  padding: 5px;
+}
+
+/* Styles for note delete icon on hover */
+.note__delete:hover {
+  color: black;
+  cursor: pointer;
+}
